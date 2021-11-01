@@ -3,6 +3,7 @@ let times = document.querySelector('.times');
 let mobileNav = document.querySelector('.mobile-nav');
 let aboutCloseNav = document.querySelector('.about-close-nav');
 let projectsCloseNav = document.querySelector('.projects-close-nav');
+let blogCloseNav = document.querySelector('.blog-close-nav');
 let homeCloseNav = document.querySelector('.home-close-nav');
 
 hamburger.addEventListener('click', function(){
@@ -18,6 +19,10 @@ aboutCloseNav.addEventListener('click', function(){
 });
 
 projectsCloseNav.addEventListener('click', function(){
+  mobileNav.classList.remove('open');
+});
+
+blogCloseNav.addEventListener('click', function(){
   mobileNav.classList.remove('open');
 });
 
